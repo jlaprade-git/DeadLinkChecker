@@ -1,0 +1,24 @@
+{
+  "start_url": "https://www.SomeWebsiteOrSomething.com",
+  "exclude_patterns": [
+    ".*admin.*",
+    ".*login.*"
+  ],
+  "exclude_link_check_patterns": [
+    ".*\\.txt$"
+  ],
+  "include_external_links": true,
+  "max_workers": 10,
+  "delay_between_requests": 1,
+  "timeout": 30,
+  "log_level": "INFO",
+  "email": {
+    "enabled": true,
+    "smtp_server": "smtp.mailserver.whatever",
+    "smtp_port": 587,
+    "from_email": "user@mailserver.whatever",
+    "from_password": "passwordThatShouldProbablyBeAnAppReg",
+    "to_emails": ["recipient@mailserver.whatever"],
+    "subject": "Broken Links Report for SomeWebsiteOrSomething.com"
+  }
+}
